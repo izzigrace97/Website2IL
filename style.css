@@ -1,0 +1,173 @@
+
+/*
+Black = #1A202C
+Dark Turquoise = #1F7872
+Light Turquoise = #72B095
+Beige = #DEDBA7
+Light Beige = #f5f3cb
+Red = #D13F31
+*/
+
+
+html {
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(#72B095, #1F7872);
+}
+
+header {
+	text-align: center;
+	color: #1A202C;
+}
+
+.zone-no-hover {
+    border: #D13F31;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1.5vw;
+    padding: 0;
+    background-color: #D13F31;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-nav {
+    	flex-direction: column;
+        font-size: 2.5vw;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+li:hover {
+	background-color: #72B095;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  .main-nav li {
+  	text-align: center;
+  	text-decoration: underline;
+    float: none;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-image: linear-gradient(#f5f3cb, #DEDBA7);
+	min-height:300px;
+	max-height:700px;
+	position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 8vw;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 5vw;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+   .container2 {
+   	flex-direction: column;
+   	justify-content: center;
+    width: 100%;
+  }
+}
+
+
+.container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+}
+
+.holder {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30em
+	height: auto;
+	background-color: #1A202C;
+	padding: 20px;
+	margin: 50px 50px 15px 50px;
+}
+
+
+.holder > img {
+	width: 30em;
+	height: auto;
+	border: 4px solid #D13F31;
+}
+
+@media screen and (max-width: 1024px) {
+   .holder {
+    padding-top: 20px;
+    margin: 0;
+    background-image: #1A202C;
+    border: 1px solid #1A202C;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+	.first {
+		padding-top: 40px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+   .holder > img {
+   	width: 100%;
+  }
+}
+
+.word-centered {
+	position: relative;
+	top: 50%;
+}
+
+p {
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+	p {
+		background-color: #1F7872;
+		padding: 5px;
+		width: 100%;
+		font-size: 3.5vw;
+	}
+}
