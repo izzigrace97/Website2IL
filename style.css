@@ -1,11 +1,19 @@
 
-/*
+/* FOR HOME PAGE
 Black = #1A202C
 Dark Turquoise = #1F7872
 Light Turquoise = #72B095
 Beige = #DEDBA7
 Light Beige = #f5f3cb
 Red = #D13F31
+*/
+
+
+/* FOR LANDSCAPE PAGE
+d9bf77 - sand colour
+d8ebb5 - light green
+639a67 - green
+2b580c - dark green
 */
 
 
@@ -39,7 +47,6 @@ header {
 @media only screen and (max-width: 1024px) {
     .main-nav {
     	flex-direction: column;
-        font-size: 2.5vw;
         padding: 0;
     }
 }
@@ -56,9 +63,27 @@ li:hover {
 	background-color: #72B095;
 }
 
+/*Landscape page hover colour------------------------------*/
+
+.ghover li:hover {
+	background-color: #639a67;
+}
+
+.ghover a:hover {
+	color: black;
+}
+
+/*---------------------------------------------------------*/
+
 a {
     color: white;
-    text-decoration: none;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 900px) {
+	a {
+		font-size: 1.1em;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -75,11 +100,23 @@ a {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	background-image: linear-gradient(#f5f3cb, #DEDBA7);
 	min-height:300px;
 	max-height:700px;
 	position: relative;
 }
+
+
+/*container colour----------------------------*/
+.beige {
+	background-image: linear-gradient(#f5f3cb, #DEDBA7);
+}
+
+.beige-land {
+	background-image: linear-gradient(#ffe6a1, #d9bf77)
+}
+
+/*----------------------------------------------*/
+
 
 @media screen and (max-width: 1000px) {
   h1 {
@@ -90,9 +127,17 @@ a {
 
 @media screen and (min-width: 1000px) {
   h1 {
-    font-size: 5vw;
-    padding-top: 80px;
+    font-size: 6vw;
+    padding-top: 70px;
   }
+}
+
+.container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: auto;
+	width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -101,15 +146,6 @@ a {
    	justify-content: center;
     width: 100%;
   }
-}
-
-
-.container2 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	height: auto;
-	width: 100%;
 }
 
 .holder {
@@ -130,15 +166,40 @@ a {
 	border: 4px solid #D13F31;
 }
 
+/*Landscape colour for the image border---------------------*/
+
+.land > img {
+	width: 30em;
+	height: auto;
+	border: 4px solid #d8ebb5;
+}
+
+/*----------------------------------------------------------*/
+
 @media screen and (max-width: 1024px) {
    .holder {
     padding-top: 20px;
     margin: 0;
-    background-image: #1A202C;
-    border: 1px solid #1A202C;
-
   }
 }
+
+@media screen and (max-width: 1024px) {
+	.main {
+	background-color: #1A202C;
+    border: 1px solid #1A202C;
+	}
+}
+
+/*Landscape holder background colour---------------*/
+
+@media screen and (max-width: 1024px) {
+   .land {
+    background-color: #2b580c;
+    border: 1px solid #2b580c;
+  }
+}
+
+/*--------------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
 	.first {
@@ -157,6 +218,17 @@ a {
 	top: 50%;
 }
 
+.section-title {
+	padding: 20px 30px;
+	margin: 70px 0px;
+	background-color: #71ded3;
+}
+
+h2 {
+	font-size: 4vw;
+	margin: 0;
+}
+
 p {
 	color: white;
 	text-align: center;
@@ -168,6 +240,20 @@ p {
 		background-color: #1F7872;
 		padding: 5px;
 		width: 100%;
-		font-size: 3.5vw;
+		font-size: 3vw;
 	}
 }
+
+
+/*Landscape colour -------------------------------*/
+
+@media screen and (max-width: 1024px) {
+	p {
+		background-color: #639a67;
+		padding: 5px;
+		width: 100%;
+		font-size: 3vw;
+	}
+}
+
+/*----------------------------------------------------*/
