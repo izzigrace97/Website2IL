@@ -12,53 +12,70 @@
 		<div class="word-centered"><h1>Collection of Landscape Photos</h1></div>
 	<div>
 </header>
-<body class="deep-green">
+<body>
 	<nav class="zone-no-hover sticky">
-	 	<ul class="main-nav ghover">
+	 	<ul class="main-nav">
 	          <li><a href="./index.html">About</a></li>
-	          <li><a href="./animals.html">Animals</a></li>
-	          <li><a href="./landscape.html">Landscape</a></li>
+
+	          <li class="dropbtn" onclick="myFunction()">
+	          		<a href="./animals.html">Animals</a>
+					  <div class="dropdown-content" id="myDropdown">
+						    <a href="./animals.html #pets">Pets</a>
+						    <a href="./animals.html #aquatic">Aquatic</a>
+						    <a href="./animals.html #other">Other</a>
+					  </div>
+
+			  </li>
+			  <li class="dropbtn" onclick="myFunction2()">
+	          		<a href="./landscape.html">Landscape</a>
+					  <div class="dropdown-content" id="myDropdown2">
+						    <a href="#trees">Forests</a>
+						    <a href="#landmarks">Landmarks</a>
+					  </div>
+
+			  </li>
 	          <li class="push"><a href="">Contact</a></li>
 		</ul>
 	</nav>
-	<section class="forest">
+	<section id="trees">
 		<div class="section-title">
 			<h2>FOREST LANDSCAPES</h2>
 		</div>	
 		<div class="container2">
-			<div class="holder land first">
+			<div class="holder first">
 				<img src="./forest.JPG">
 				<p>Forest</p>
 			</div>
-			<div class="holder land">
+			<div class="holder">
 				<img src="./bridge.JPG">
 				<p>Bridge</p>
 			</div>
-			<div class="holder land">
+			<div class="holder">
 				<img src="./tress2.JPG">
 				<p>Tree Greenary</p>
 			</div>
 		</div>	
 	</section>
-		<section class="Landmark">
+		<section id="landmarks">
 		<div class="section-title">
 		<h2>LANDMARK LANDSCAPES</h2>
 		</div>
 		<div class="container2">
-			<div class="holder land first">
+			<div class="holder first">
 				<img src="./sunset3.jpg">
 				<p>Sunset in Greece</p>
 			</div>
-			<div class="holder land">
+			<div class="holder">
 				<img src="./edinburgh.JPG">
 				<p>View in Edinburgh</p>
 			</div>
-			<div class="holder land">
+			<div class="holder">
 				<img src="./merlion2.JPG">
 				<p>Merlion</p>
 			</div>
 		</div>	
 	</section>
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 
