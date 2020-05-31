@@ -16,12 +16,28 @@
 	<nav class="zone-no-hover sticky">
 	 	<ul class="main-nav">
 	          <li><a href="./index.html">About</a></li>
-	          <li><a href="./animals.html">Animals</a></li>
-	          <li><a href="./landscape.html">Landscape</a></li>
+
+	          <li class="dropbtn" onclick="myFunction()">
+	          		<a href="./animals.html">Animals</a>
+					  <div class="dropdown-content" id="myDropdown">
+						    <a href="#pets">Pets</a>
+						    <a href="#aquatic">Aquatic</a>
+						    <a href="#other">Other</a>
+					  </div>
+
+			  </li>
+			  <li class="dropbtn" onclick="myFunction2()">
+	          		<a href="./landscape.html">Landscape</a>
+					  <div class="dropdown-content" id="myDropdown2">
+						    <a href="./landscape.html #trees">Forests</a>
+						    <a href="./landscape.html #landmarks">Landmarks</a>
+					  </div>
+
+			  </li>
 	          <li class="push"><a href="">Contact</a></li>
 		</ul>
 	</nav>
-	<section class="forest">
+	<section id="pets">
 		<div class="section-title">
 			<h2>PETS</h2>
 		</div>	
@@ -42,7 +58,7 @@
 			</div>
 		</div>	
 	</section>
-		<section class="Landmark">
+		<section id="aquatic">
 		<div class="section-title">
 		<h2>AQUATIC ANIMALS</h2>
 		</div>
@@ -73,7 +89,7 @@
 			</div>
 		</div>	
 	</section>
-	<section class="Other">
+	<section id="other">
 		<div class="section-title">
 		<h2>OTHER ANIMALS</h2>
 		</div>
@@ -96,6 +112,10 @@
 			</div>
 		</div>	
 	</section>
+
+
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 <footer>
 	<h6>Created by Isabelle Leach</h6>
