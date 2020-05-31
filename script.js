@@ -71,5 +71,4 @@ const init = () => {
 	update();
 	window.addEventListener('scroll', update);
 }
-
 init();
