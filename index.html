@@ -14,12 +14,28 @@
 </header>
 <body>
 	<nav class="zone-no-hover sticky">
-      <ul class="main-nav">
-          <li><a href="">About</a></li>
-          <li><a href="./animals.html">Animals</a></li>
-          <li><a href="./landscape.html">Landscape</a></li>
-          <li class="push"><a href="">Contact</a></li>
-  </ul>
+	 	<ul class="main-nav">
+	          <li class="dropbtn"><a href="./index.html">About</a></li>
+
+	          <li class="dropbtn" onclick="myFunction()">
+	          		<a href="./animals.html">Animals</a>
+					  <div class="dropdown-content" id="myDropdown">
+						    <a href="./animals.html #pets">Pets</a>
+						    <a href="./animals.html #aquatic">Aquatic</a>
+						    <a href="./animals.html #other">Other</a>
+					  </div>
+
+			  </li>
+			  <li class="dropbtn" onclick="myFunction2()">
+	          		<a href="./landscape.html">Landscape</a>
+					  <div class="dropdown-content" id="myDropdown2">
+						    <a href="./landscape.html #trees">Forests</a>
+						    <a href="/landscape.html #landmarks">Landmarks</a>
+					  </div>
+
+			  </li>
+	          <li class="push"><a href="">Contact</a></li>
+		</ul>
   </nav>
 	<section>
 		<div class="container2">
@@ -37,5 +53,6 @@
 			</div>			
 		</div>
 	</section>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
