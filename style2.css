@@ -232,6 +232,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1024px) {
+   .griditem > img {
+   	border: 1px solid grey;
+  }
+}
+
 
 .container {
 	display: flex;
