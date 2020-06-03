@@ -219,6 +219,20 @@ a {
 	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 grey;
 }
 
+@media screen and (max-width: 1024px) {
+   .gridsection {
+   	grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+   .griditem {
+   	padding: 5px;
+	margin: 8px;
+  }
+}
+
+
 .container {
 	display: flex;
 	justify-content: center;
