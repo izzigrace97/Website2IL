@@ -221,14 +221,14 @@ a {
 
 @media screen and (max-width: 1024px) {
    .gridsection {
-   	grid-gap: 10px;
+   	grid-gap: 5px;
   }
 }
 
 @media screen and (max-width: 1024px) {
    .griditem {
-   	padding: 5px;
-	margin: 8px;
+   	padding: 4px;
+	margin: 5px;
   }
 }
 
