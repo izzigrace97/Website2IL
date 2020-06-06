@@ -8,17 +8,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <header>
-	<div class="container beige">
+	<!--<div class="container beige">
 		<div class="word-centered"><h1>Website 2</h1></div>
-	<div>
+	<div>-->
 </header>
 <body>
-	<nav class="zone-no-hover sticky">
+	<nav class="zone-no-hover sticky" id="home">
 	 	<ul class="main-nav">
-	          <li class="dropbtn"><a href="./index.html">About</a></li>
+	          <li class="dropbtn"> Home
+	          	<!--<a href="./index.html">About</a>-->
+	          </li>
 
-	          <li class="dropbtn" onclick="myFunction()">
-	          		<a href="./animals.html">Animals</a>
+	          <li class="dropbtn" onclick="myFunction()"> Animals
+	          		<!--<a href="">Animals</a>-->
 					  <div class="dropdown-content" id="myDropdown">
 						    <a href="./animals.html#pets">Pets</a>
 						    <a href="./animals.html#aquatic">Aquatic</a>
@@ -26,29 +28,45 @@
 					  </div>
 
 			  </li>
-			  <li class="dropbtn" onclick="myFunction2()">
-	          		<a href="./landscape.html">Landscape</a>
+			  <li class="dropbtn" onclick="myFunction2()"> Landscape
+	          		<!--<a href="">Landscape</a>-->
 					  <div class="dropdown-content" id="myDropdown2">
 						    <a href="./landscape.html#trees">Forests</a>
 						    <a href="/landscape.html#landmarks">Landmarks</a>
 					  </div>
 
 			  </li>
-	          <li class="push"><a href="">Contact</a></li>
+			  <li class="dropbtn" onclick="myFunction3()"> Baking
+	          		<!--<a href="">Landscape</a>-->
+					  <div class="dropdown-content" id="myDropdown3">
+						    <a href="./baking.html#cake">Cakes</a>
+						    <a href="./baking.html#cookie">Cookies</a>
+						    <a href="./baking.html#cheesecake">Cheesecake</a>
+						    <a href="./baking.html#icecream">Icecream</a>
+					  </div>
+
+			  </li>
+	          <li class="push"> Contact
+	          	<!--<a href="">Contact</a></li>-->
 		</ul>
   </nav>
-	<section>
+	<section class="homepage">
 		<div class="gridsection">
-			<div class="griditem item1"><img src="./bay1.jpg"></div>
-			<div class="griditem item2"><img src="./sunsetg.jpg"></div>
-			<div class="griditem item3"><img src="./flower4.jpg"></div>
-			<div class="griditem item4"><img src="./bud1.jpg"></div>
-			<div class="griditem item5"><img src="./res1.jpg"></div>
-			<div class="griditem item6"><img src="./flower3.jpg"></div>
-			<div class="griditem item7"><img src="./res2.jpg"></div>
+			<div class="griditem item1"><img src="./bay1.JPG"></div>
+			<div class="griditem item2"><img src="./sunsetg.JPG"></div>
+			<div class="griditem item3"><img src="./flower4.JPG"></div>
+			<div class="griditem item4"><img src="./bud1.JPG"></div>
+			<div class="griditem item5"><img src="./res1.JPG"></div>
+			<div class="griditem item6"><img src="./flower3.JPG"></div>
+			<div class="griditem item7"><img src="./res2.JPG"></div>
+			<div class="griditem item8"><img src="./edinburgh.JPG"></div>
+			<div class="griditem item9"><img src="./waterfall2.JPG"></div>
 
 		</div>
 	</section>
 <script type="text/javascript" src="script.js"></script>
+	<div class="top">
+		<button><a href="">Top</a></button>
+	</div>
 </body>
 </html>
