@@ -36,6 +36,13 @@ section {
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .homepage {
+    	margin: 20px 0;
+    }
+}
+
+
 .zone-no-hover {
     border: #D13F31;
 }
@@ -46,7 +53,7 @@ section {
     margin: 0;
     font-size: 1.5vw;
     padding: 0;
-    background-color: #c72400;
+    background-image: linear-gradient(to bottom right, #eb4a26, #c72400);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -59,7 +66,7 @@ section {
 
 @media only screen and (max-width: 1024px) {
     .main-nav {
-    	flex-direction: column;
+    	flex-direction: row;
         padding: 0;
     }
 }
@@ -70,6 +77,8 @@ section {
 
 li {
     padding: 20px;
+    color: white;
+    font-size: 0.8em;
 }
 
 li:hover {
@@ -78,7 +87,7 @@ li:hover {
 
 a {
     color: white;
-    font-size: 0.8em;
+    text-decoration: none;
 }
 
 /*.main-nav a {
@@ -138,9 +147,10 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-	a {
+	a, li {
 		font-size: 2vw;
 		width: inherit;
+		text-decoration: none;
 	}
 } 
 
@@ -156,8 +166,8 @@ a {
 
 .gridsection {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 0.75fr 0.75fr 0.75fr;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 0.75fr);
 	grid-gap: 20px;
 	align-items: stretch;
 }
@@ -211,6 +221,16 @@ a {
 	grid-column: 3;
 	grid-row: 2;
 }
+.item8 {
+	display: grid;
+	grid-column: 1 / span 2;
+	grid-row: 4;
+}
+.item9 {
+	display: grid;
+	grid-column: 3;
+	grid-row: 4;
+}
 
 
 .griditem > img {
@@ -221,14 +241,14 @@ a {
 
 @media screen and (max-width: 1024px) {
    .gridsection {
-   	grid-gap: 5px;
+   	grid-gap: 10px;
   }
 }
 
 @media screen and (max-width: 1024px) {
    .griditem {
-   	padding: 4px;
-	margin: 5px;
+   	padding: 5px;
+	margin: 8px;
   }
 }
 
@@ -237,7 +257,6 @@ a {
    	border: 1px solid grey;
   }
 }
-
 
 .container {
 	display: flex;
@@ -266,7 +285,7 @@ a {
 .container2 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	height: auto;
 	width: 100%;
 	padding-bottom: 20px;
@@ -334,7 +353,7 @@ a {
 
 @media screen and (max-width: 1024px) {
    .holder {
-   	margin: 30px 0px;
+   	margin: 25px 0px;
    	width: 40%;
   }
 }
@@ -371,6 +390,25 @@ h2 {
 	padding: 0;
 }
 
+.top {
+	position: sticky;
+	height: 4em;
+	width: 4em;
+	z-index: 1;
+	bottom: 10%;
+	float: right;
+	border-radius: 20px;
+}
+
+.top > button {
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	background-color: #c72400;
+	color: white;
+
+}
+
 @media screen and (max-width: 450px) {
    h2 {
    	font-size: 5vw;
@@ -399,8 +437,8 @@ footer {
 @media screen and (max-width: 1024px) {
    .dropdown-content {
     position: relative;
+    margin: 20px 0 0 0;
 }
-
 
 
 @media screen and (max-width: 1024px) {
@@ -408,7 +446,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     padding: 0;
 }
 
