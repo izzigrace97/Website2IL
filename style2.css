@@ -18,7 +18,7 @@ organe - df7861
 
 
 html {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Jaldi', sans-serif;
 }
 
 body {
@@ -85,10 +85,15 @@ li:hover {
 	background-color: #fb6746;
 }
 
+.main-nav {
+	font-weight: bold;
+}
+
 a {
     color: white;
     text-decoration: none;
-}
+    font-weight: bold;
+ }
 
 /*.main-nav a {
   float: left;
@@ -408,6 +413,7 @@ h2 {
 	color: white;
 
 }
+
 
 @media screen and (max-width: 450px) {
    h2 {
