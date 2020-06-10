@@ -240,7 +240,7 @@ a {
 
 .griditem > img {
 	width: 100%;
-	border: 3px solid grey;
+	place-self: stretch;
 	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 grey;
 }
 
@@ -308,6 +308,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	position: relative;
 	width: 20em;
 	height: auto;
@@ -389,12 +390,6 @@ a {
 	border-radius: 5px;
 }
 
-h2 {
-	font-size: 3vw;
-	margin: 0;
-	padding: 0;
-}
-
 .top {
 	position: sticky;
 	height: 4em;
@@ -402,17 +397,23 @@ h2 {
 	z-index: 1;
 	bottom: 10%;
 	float: right;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .top > button {
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
-	background-color: #c72400;
+	background-image: radial-gradient(#c72400,#eb4a26);
 	color: white;
-
 }
+
+h2 {
+	font-size: 3vw;
+	margin: 0;
+	padding: 0;
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -436,9 +437,11 @@ p {
 
 footer {
 	display: flex;
+	width: 100%;
 	justify-content: center;
 	background-image: linear-gradient(to bottom right, #5d6b87, #1A202C);
 }
+
 
 @media screen and (max-width: 1024px) {
    .dropdown-content {
